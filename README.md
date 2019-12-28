@@ -18,11 +18,6 @@ Some of the most important features of the proposed project are given below.
 •	Students will get notices about the different events organised by college like workshops, sports, cultural activities and so on.
 •	Students will be able to submit their assignments through the use of this application.
 
-## API Link
-https://github.com/stw304cem/t2-backend-api-pradipkandel008.git
-## YouTube Link
-https://youtu.be/wvgNYZmdX4s
-
 
 ## Restful API
 The developed app has a restful api for the interaction to the server and the restful api has been developed using Node JS with express framework and with the use of mongoose for interacting with MongoDB database. MongoDB database is NoSQL database having the feature of flexibility and scalability and it can store large volume of data in its collections (tables). In this project the four main methods of restful api are used and they post, put, delete and get. The get method is used for getting/fetching the information/data from database, post method is used for inserting data into the database, put method is used to update documents in database and delete method is used to delete/remove documents in the database through the use of api. 
