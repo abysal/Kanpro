@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    tools:context=".Activity.SubmitAssignment"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/input_rectangle_box"
+        android:hint="Assignment Title"
+        android:lines="2"
+        android:padding="5dp"
+        android:id="@+id/et_assignment_title"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/input_rectangle_box"
+        android:hint="Assignment Links"
+        android:lines="4"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/et_assignment_links"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnsuccess"
+        android:text="Browse File..."
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:id="@+id/btn_browse_assignment_file"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnsuccess"
+        android:text="Submit"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:id="@+id/btn_submit_assignment"/>
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

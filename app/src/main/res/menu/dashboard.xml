@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"/>-->
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="100"
+        android:title="Post Feedback"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_sensor"
+        android:orderInCategory="100"
+        android:title="View Sensors"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never"
+        />
+
+</menu>

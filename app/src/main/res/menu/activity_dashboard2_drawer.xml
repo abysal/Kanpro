@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@drawable/ic_school2_black_24dp"
+            android:title="Courses" />
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Assignments" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notices" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_submission"
+            android:icon="@drawable/ic_playlist_add_check_black_24dp"
+            android:title="My Submissions" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="My Feedback" />
+    </group>
+
+    <item android:title="Keep In Touch">
+        <menu>
+            <item
+                android:id="@+id/nav_phone"
+                android:icon="@drawable/ic_phone_black2_24dp"
+                android:title="Call Us : 9843624525" />
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="Email: collegeapp@gmail.com" />
+        </menu>
+    </item>
+
+</menu>

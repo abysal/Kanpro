@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateProfile"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="16dp"
+        app:contentPadding="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            >
+
+            <TextView
+                android:id="@+id/page_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="update profile"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:id="@+id/et_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/page_heading"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_edit_black_24dp"
+                android:hint="Enter First Name"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                />
+
+            <EditText
+                android:id="@+id/et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_first_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_edit_black_24dp"
+                android:hint="Enter Last Name"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+               />
+
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_last_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:hint="Enter Email"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:editable="false"/>
+
+            <EditText
+                android:id="@+id/et_batch"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_email"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_school_black_24dp"
+                android:hint="Enter Batch (eg 18,19)"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:inputType="number"
+               />
+
+            <EditText
+                android:id="@+id/et_section"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_batch"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_school_black_24dp"
+                android:hint="Enter Section (A,B,C)"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:inputType="text"
+               />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/rg_gender"
+                android:layout_below="@id/et_section"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/rb_male"
+                    android:textColor="#000"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/rb_female"
+                    android:textColor="#000"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/rg_gender"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:hint="Enter Username (College ID)"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+               />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_user_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_rectangle_box"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="Enter New Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnsuccess"
+                android:text="Update"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</ScrollView>
